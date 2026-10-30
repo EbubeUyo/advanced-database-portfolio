@@ -1,0 +1,5 @@
+CREATE DATABASE SecureBankDB;
+GO
+
+USE SecureBankDB;
+GO
