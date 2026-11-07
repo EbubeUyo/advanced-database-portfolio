@@ -8,7 +8,8 @@ CREATE TABLE dbo.Customers
     LastName NVARCHAR(50) NOT NULL,
     Email NVARCHAR(100) NOT NULL UNIQUE,
     CreatedAt DATETIME2 NOT NULL
-        DEFAULT SYSUTCDATETIME()
+        DEFAULT SYSUTCDATETIME(),
+    Phonenumber VARCHAR(20)
 );
 
 

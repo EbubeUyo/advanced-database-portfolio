@@ -13,11 +13,11 @@ IF EXISTS (
 )
     THROW 51020, 'Portfolio 2 indexes already exist: baseline would be invalid. Use saved baseline or a fresh test database.', 1;
 
-IF NOT EXISTS (SELECT 1 FROM dbo.Accounts WHERE AccountNumber = '9800000001')
+IF NOT EXISTS (SELECT 1 FROM dbo.Accounts WHERE AccountNumber = '1000000001')
     THROW 51021, 'Run 01-generate-test-data.sql first.', 1;
 
 DECLARE @TestAccountId INT = (
-    SELECT AccountId FROM dbo.Accounts WHERE AccountNumber = '9800000001'
+    SELECT AccountId FROM dbo.Accounts WHERE AccountNumber = '1000000001'
 );
 DECLARE @AsOf DATETIME2(0) = SYSUTCDATETIME();
 
