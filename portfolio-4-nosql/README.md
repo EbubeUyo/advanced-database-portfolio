@@ -5,7 +5,7 @@
 Model the same SecureBank case study as a **document database** (MongoDB), and explain
 when this model is a better or worse fit than the relational design in Portfolio 1.
 
-## How to run
+## How I ran
 
 1. Create a free MongoDB Atlas cluster (M0), or install MongoDB locally.
 2. Run: `mongosh "<connection string>" securebank-mongodb.js`
