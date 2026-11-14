@@ -1,11 +1,4 @@
-/*
-    Portfolio 3 - Step 4: Isolation levels (WINDOW A)
-    Open TWO query windows. Run this in window A, then IMMEDIATELY run
-    04b in window B (you have 20 seconds).
 
-    Window A changes Amina's balance but has NOT committed yet.
-    After 20 seconds it ROLLS BACK, so the change "never happened".
-*/
 USE SecureBankDB;
 GO
 
